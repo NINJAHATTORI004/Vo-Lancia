@@ -1,13 +1,13 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  background-color: #dee2ff;
   padding: 50px;
 }
 
 textarea {
   width: 100%;
   margin-bottom: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #8e9aaf;
   border-radius: 5px;
 }
 
@@ -15,7 +15,7 @@ select,
 button {
   margin-bottom: 10px;
 
-  border: 1px solid #ccc;
+  border: 1px solid #8e9aaf;
   border-radius: 5px;
   background-color: #fff;
   cursor: pointer;
@@ -24,18 +24,18 @@ button {
 
 button {
   margin-bottom: 10px;
-  background-color: #007bff;
+  background-color: #8e9aaf;
   color: #fff;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #8e9aaf;
 }
 
 #translatedText {
   margin-top: 10px;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #8e9aaf;
   border-radius: 5px;
   background-color: #fff;
 }
@@ -44,7 +44,7 @@ a {
   display: block;
   margin-top: 20px;
   text-decoration: none;
-  color: #007bff;
+  color: #8e9aaf;
 }
 
 a:hover {
