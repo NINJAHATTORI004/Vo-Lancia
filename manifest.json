@@ -3,7 +3,7 @@
   "name": "Azure Translate Extension",
   "version": "1.0",
   "description": "Translate text using Azure Translate API",
-  "permissions": ["activeTab", "scripting"],
+  "permissions": ["activeTab", "scripting", "storage"],
   "host_permissions": ["<all_urls>"],
   "action": {
     "default_popup": "popup.html",

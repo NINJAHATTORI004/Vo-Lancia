@@ -9,8 +9,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const targetLanguage = languageDropdown.value;
     translateText(textToTranslate, targetLanguage);
   });
-});
 
+  // Load translation history
+  loadTranslationHistory();
+});
 async function translateText(text, targetLanguage) {
   const subscriptionKey = "f41ae025a1e94b4689d8f2dae5e4c635";
   const endpoint = "https://api.cognitive.microsofttranslator.com";
@@ -31,8 +33,31 @@ async function translateText(text, targetLanguage) {
   const translations = await response.json();
   const translatedText = translations[0].translations[0].text;
 
+  // Store translation in history
+  storeTranslation(text, translatedText, targetLanguage);
+
   const translatedTextDiv = document.getElementById("translatedText");
   translatedTextDiv.innerText = translatedText;
+}
+
+function storeTranslation(originalText, translatedText, targetLanguage) {
+  chrome.storage.local.get("translationHistory", function (data) {
+    let translationHistory = data.translationHistory || [];
+    translationHistory.push({
+      originalText: originalText,
+      translatedText: translatedText,
+      targetLanguage: targetLanguage,
+    });
+
+    chrome.storage.local.set({ translationHistory: translationHistory });
+  });
+}
+
+function loadTranslationHistory() {
+  chrome.storage.local.get("translationHistory", function (data) {
+    const translationHistory = data.translationHistory || [];
+    console.log(translationHistory); // Display translation history in console or use it to display in UI
+  });
 }
 
 function uuidv4() {
