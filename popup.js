@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
     translateText(textToTranslate, targetLanguage);
   });
 
-  // Load translation history
   loadTranslationHistory();
 });
 async function translateText(text, targetLanguage) {
@@ -56,7 +55,7 @@ function storeTranslation(originalText, translatedText, targetLanguage) {
 function loadTranslationHistory() {
   chrome.storage.local.get("translationHistory", function (data) {
     const translationHistory = data.translationHistory || [];
-    console.log(translationHistory); // Display translation history in console or use it to display in UI
+    console.log(translationHistory);
   });
 }
 

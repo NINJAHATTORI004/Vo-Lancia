@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Azure Translate Extension</title>
+    <link rel="stylesheet" href="styles.css" />
     <script src="popup.js"></script>
   </head>
   <body>
+    <h1>VoLancia</h1>
+    <p>Write text to translate:</p>
     <textarea id="inputText" rows="4" cols="50"></textarea>
     <select id="languageDropdown">
       <option value="af">Afrikaans</option>
@@ -42,7 +45,9 @@
       <option value="ja">Japanese</option>
       <option value="sw">Kiswahili</option>
     </select>
+    <br />
     <button id="translateButton">Translate</button>
+    <p>Translated Text:</p>
     <div id="translatedText"></div>
     <a href="history.html" target="_blank">Translation History</a>
   </body>
