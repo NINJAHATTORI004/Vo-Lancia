@@ -23,6 +23,17 @@ li {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+button {
+  display: block;
+  margin: 10px;
+  margin-bottom: 0;
+  background-color: #8e9aaf;
+  color: #fff;
+  border: 1px solid #8e9aaf;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 a {
   display: block;
   margin-top: 30px;
