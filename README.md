@@ -32,6 +32,12 @@ The extension supports a wide range of languages provided by the Azure Translate
 
 To use the extension, you need to obtain an Azure Translate API subscription key and specify it in the `popup.js` file.
 
+![1](https://github.com/NINJAHATTORI004/Vo-Lancia/blob/main/images/Screenshot.png)
+
+
+
+
+
 ```javascript
 const subscriptionKey = "YOUR_AZURE_TRANSLATE_SUBSCRIPTION_KEY";
 const region = "YOUR_AZURE_TRANSLATE_REGION";
