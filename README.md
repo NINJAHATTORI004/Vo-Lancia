@@ -26,6 +26,8 @@ This Chrome extension allows users to translate text using the Azure Translate A
 3. Select the target language from the dropdown menu.
 4. Click the "Translate" button to view the translated text.
 5. Click on the "Translation History" link to view all translations made by the extension.
+
+
 ![2](https://github.com/NINJAHATTORI004/Vo-Lancia/blob/main/images/Screenshot%202024-06-26%20214157.jpg)
 
 ## Supported Languages
