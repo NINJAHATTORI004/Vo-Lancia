@@ -24,6 +24,10 @@ This Chrome extension allows users to translate text using the Azure Translate A
 4. Click the "Translate" button to view the translated text.
 5. Click on the "Translation History" link to view all translations made by the extension.
 
+
+![1](https://github.com/NINJAHATTORI004/Vo-Lancia/blob/main/images/Screenshot.png)
+![2](https://github.com/NINJAHATTORI004/Vo-Lancia/blob/main/images/Screenshot%202024-06-26%20214157.jpg)
+
 ## Supported Languages
 
 The extension supports a wide range of languages provided by the Azure Translate API.
@@ -32,7 +36,7 @@ The extension supports a wide range of languages provided by the Azure Translate
 
 To use the extension, you need to obtain an Azure Translate API subscription key and specify it in the `popup.js` file.
 
-![1](https://github.com/NINJAHATTORI004/Vo-Lancia/blob/main/images/Screenshot.png)
+
 
 
 
@@ -42,3 +46,5 @@ To use the extension, you need to obtain an Azure Translate API subscription key
 const subscriptionKey = "YOUR_AZURE_TRANSLATE_SUBSCRIPTION_KEY";
 const region = "YOUR_AZURE_TRANSLATE_REGION";
 ```
+
+
