@@ -2,7 +2,7 @@
 
 This Chrome extension allows users to translate text using the Azure Translate API.
 
-## Features
+## Features:
 
 - Translate text into various languages supported by Azure Translate API.
 - View translation history.
